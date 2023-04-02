@@ -1,0 +1,588 @@
+@import url('https://fonts.googleapis.com/css2?family=Bona+Nova&family=Lobster&family=Roboto+Slab&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+}
+html {
+  scroll-behavior: smooth;
+}
+p{
+  text-align: center;
+}
+
+nav{
+  /* border-bottom: 2px solid rgb(167, 167, 167); */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* position: fixed; */
+  width: 100%;
+  background: linear-gradient(to left ,rgb(243, 243, 218),rgb(141, 195, 236),rgb(76, 223, 191));
+  height: 55px;
+  
+}
+nav ul {
+  display: flex;
+  list-style:none;
+  margin: 0px 10px;
+  
+}
+#brand {
+  position: absolute;
+  left:20px
+}
+nav button {
+  padding: 2px;
+  height: 33px;
+  width: 70px;
+  
+}
+
+#login-container{
+  display: flex;
+  align-items: center;
+  justify-content: cneter;
+  position: absolute;
+  right: 10px;
+  top: -600px;
+  /* border: 2px solid black; */
+  height: 500px;
+  width: 330px;
+  z-index: 1;
+  border-radius: 20px;
+  transition: all;
+  transition-duration: 0.5s;
+  opacity: 1;
+}
+
+#logOut{
+  position: absolute;
+  right: 0px;
+}
+a {
+  text-decoration: none;
+  color: black;
+  font-weight: bolder;
+  margin: 0px 20px;
+  font-family: 'Bona Nova', serif;
+  /* font-family: 'Roboto Slab', serif; */
+
+}
+#home-main{
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  /* border:2px solid black; */
+  height: 92vh;
+}
+
+
+#home-main-1{
+  grid-column-start: 1;
+  grid-column-end: 2;
+
+  /* display: flex; */
+  overflow-y: scroll;
+  /* border-right: 2px solid rgb(180, 185, 185); */
+  padding: 2px;
+  background: linear-gradient(to bottom, rgb(76, 223, 191), #a8abfb, transparent);
+  color: white;
+  /* overflow-y: auto; */
+}
+
+#home-main-1 a{
+  color: rgb(3, 60, 129);
+  text-decoration: none;
+}
+#inside-1{
+
+  overflow-y: scroll;
+  /* border-right: 2px solid gray; */
+  height: 100%;
+  border-radius: 7px;
+
+  padding: 10px;
+
+}
+#home-main-2{
+  grid-column-start: 2;
+  grid-column-end: 6;
+  
+  overflow-y: scroll;
+}
+
+::-webkit-scrollbar {
+  width: 3px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  /* box-shadow: inset 0 0 5px grey; */
+  border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgb(156, 154, 154);
+  border-radius: 7px;
+}
+
+
+
+
+#head-line{
+  height: 90px;
+  /* width: 100%; */
+  background: linear-gradient(to left, #a8abfb, rgb(46, 210, 255), transparent);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  /* border: 1px solid #7f83fb; */
+  /* border-top-left-radius: 10px; */
+  /* border-bottom-right-radius: 10px; */
+  box-shadow: 0px 0px 3px 1px rgb(169, 168, 168);
+  /* position: fixed; */
+  /* opacity:0.7 */
+}
+
+.post-container{
+  background: linear-gradient(to right,rgb(141, 195, 236), rgb(76, 223, 191));
+  height: 200vh;
+}
+.post-container h1{
+  
+  background-color: #049ba9;
+  color: white;
+  padding: 20px;
+}
+.cards{ 
+  width: 18rem;
+  margin: 10px;
+  border: 2px solid rgb(121, 121, 122);
+  
+  border-radius: 10px;
+  
+}
+.cards img {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.cards-desc{
+  background: linear-gradient(to right, #a8abfb, rgb(46, 210, 255));
+  padding: 10px;
+  color: rgb(255, 255, 255);
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 80px;
+
+ 
+
+  
+}
+.cards-desc h6 {
+  font-family: 'Lobster', cursive;
+  font-size: 30px;
+ 
+}
+.card{ 
+  width: 18rem;
+  margin: 10px;
+  border: 2px solid rgb(121, 121, 122);
+  
+  border-radius: 10px;
+  
+}
+
+
+.card-desc{
+  background: linear-gradient(to right, #0763a1, rgb(20, 199, 249));
+  padding: 10px;
+  color: rgb(255, 255, 255);
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 80px;
+
+ 
+
+  
+}
+.card-desc h6 {
+  font-family: 'Lobster', cursive;
+  font-size: 30px;
+ 
+}
+
+
+#home-cards{
+  display: flex;
+  /* flex-direction: column; */
+  overflow-y: scroll;
+  flex-wrap: wrap;
+  padding: 10px;
+}
+
+.post-home-section{
+  display: flex;
+  /* height: 500px; */
+  /* border: 2px solid red; */
+}  
+
+button{
+  margin: 10px;
+  padding: 7px;
+  border-radius: 8px;
+  border: 0px solid black;
+  background: rgb(5, 166, 214);
+  color: white;
+}
+.post-major-heading{
+  text-align: center;
+  font-family: 'Bona Nova', serif;
+  margin-bottom: 10px;
+}
+.post-img-div{
+  /* border: 2px solid black; */
+  height: 300px;
+  width: 400px;
+  margin: 5px;
+
+}
+.post-img-div img{
+  height: 100%;
+  width: 100%;
+  border-radius: 10px;
+
+}
+
+.post-desc-div{
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 10px;
+  /* background: linear-gradient(to right, transparent,gray); */
+  padding: 20px;
+  border-radius: 10px;
+  font-family: 'Roboto Slab', serif;
+}
+
+footer{
+  position: fixed;
+  bottom: 0px;
+  background-color: white;
+  width: 100%;
+}
+
+.login-container {
+  display: flex;
+  /* border: 2px solid black; */
+  height: 90vh;
+  align-items: center;
+  justify-content: center;
+  /* background: rgb(16, 57, 107) */
+}
+.login{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  /* border: 1px solid black; */
+  height: 100%;
+
+  width: 100%; 
+  padding: 20px;
+  border-radius: 20px;
+  background: linear-gradient(to right, rgb(5, 124, 151),transparent);
+  font-weight: bolder;
+  font-family: 'Roboto Slab', serif;
+  color: white;
+  box-shadow: 0px 0px 5px 0px black;
+  
+}
+
+.login input{
+  width: 300px;
+  margin-top: 10px;
+  height: 35px;
+  border-radius: 7px;
+}
+.login button{
+  width: 200px;
+  /* margin: auto 0px; */
+  text-align: center;
+}
+.login form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.login h4{
+  color: white;
+  background: linear-gradient(to right, rgb(5, 154, 129), rgb(3, 143, 178),transparent);
+  font-weight: bolder;
+  width: 100%;
+  text-align: center;
+  padding: 7px;
+  border-radius: 10px;
+  /* display: inline-block; */
+}
+.landing-page-main {
+  grid-template-columns: repeat(2, 1fr);
+  display: grid;
+  height: 95vh;
+  /* border: 2px solid black; */
+
+}
+.landing-page-first{
+  /* border: 2px solid green; */
+  /* background: linear-gradient(to right,rgb(61, 153, 245), rgb(44, 194, 161)); */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.landing-page-first button{
+  /* align-self: first baseline; */
+  width: 350px;
+}
+.landing-page-first h1 {
+  font-weight: bolder;
+  display: inline-block;
+  color: rgb(3, 120, 113);
+  font-size: 60px;
+
+}
+.landing-page-first h5 {
+  text-align: center;
+  display: inline-block;
+  color: #008540;
+}
+
+.landing-page-second {
+  /* border: 2px solid red; */
+  /* background: linear-gradient(to right, #898df9, rgb(31, 203, 250)); */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* border: 2px solid green; */
+  
+}
+.landing-page-second img {
+  height: 100%;;
+  width: 100%;
+  cursor: pointer;
+  z-index: -1;
+}
+
+.landing-page-second div {
+  height: 80%;
+  width: 80%;
+  border-radius: 25px;
+  transition: all;
+  transition-duration: 0.5s;
+  animation-name: anim;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  /* animation-delay:0.5s ; */
+  animation-timing-function: ease-in-out;
+  /* box-shadow: 0px 0px 25px -20px black; */
+
+}
+
+#goals{
+  display: flex;
+  height: 100%;
+  width: 100%;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+#goalsHeading {
+  color: white;
+  background-color: #08a4c7;
+  width: 100%;
+  text-align: center;
+  padding: 10px;
+}
+#login {
+  position: absolute;
+  right: 0px;
+}
+
+#landing-page-topics{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+#signup-email-btn {
+  background-color: rgb(2, 40, 96);
+}
+#signup-google-btn {
+  background: linear-gradient(to right, rgb(2, 75, 165),  rgb(2, 173, 85))
+}
+
+
+.signup-container {
+  display: flex;
+  height: 90vh;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+
+.signup-container input {
+
+  width: 300px;
+  height: 35px;
+  border-radius: 10px;
+  outline: none;
+  border: 1px solid black;
+  padding: 5px;
+
+}
+.signup-container h4 {
+  margin-bottom: 20px;
+  text-align: center;
+  font-weight: bolder;
+  font-size: 30px;
+
+}
+
+
+/* about page */
+
+#about-container{
+  
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  width: 100%;
+  color: rgb(89, 90, 90);
+  /* background: linear-gradient(to top, rgb(1, 133, 189), transparent); */
+  align-items: center;
+  padding: 10px;
+}
+#about-container h1 {
+  margin: 20px;
+}
+
+#contact-container {
+  color: black;
+  /* border: 2px solid black; */
+}
+
+textarea{
+  border-radius: 10px;
+}
+#contactform {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+  /* border: 2px solid green; */
+}
+#about-container p {
+  font-weight: bold;
+  /* font-size: 20px; */
+  /* color: white; */
+}
+
+#signup-btn {
+  width: 150px;
+}
+.google {
+  background-color:rgb(3, 120, 113);
+}
+
+#contactform form{
+display: flex;
+flex-direction: column;
+width: 80%;
+}
+#contactform form input {
+  /* width: 30vh; */
+
+  height: 35px;
+  border-radius: 10px;
+  border: 1px solid black;
+  /* background-color: #9ba1a1; */
+  /* color: white; */
+  padding: 10px;
+}
+
+
+/* <----------------------------------------------- landing page topics -----------------------------------> */
+
+#landing-page-topic{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* font-weight: bold; */
+  font-size: 15px;
+  background-color: #0763a1;
+  color: white;
+  padding: 10px;
+}
+
+
+@keyframes anim {
+  0%{
+    transform: translateY(0px);
+  }
+  50%{
+    transform: translateY(15px);
+  }
+  100%{
+    transform: translateY(0px);
+  }
+}
+@media (max-width:900px){
+  #home-cards{
+    flex-direction: column;
+    align-items: center;
+    padding: 0px;
+  }
+  .post-home-section {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .post-img-div{
+    width: 370px;
+  }
+  .landing-page-main{
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+  }
+  #brand {
+    left: 0px;
+  }
+  .landing-page-first h1 {
+    font-size: 48px;
+    text-align: center;
+    margin: 15px;
+  }
+  .landing-page-first h5{
+    margin-bottom: 10px;
+  }
+  .landing-page-first h4 {
+    margin-bottom: 15px;
+  }
+  .landing-page-second {
+    align-items: normal;
+  }
+  .signup-container {
+    height: 70vh;
+  }
+  #landing-page-topic{
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+  }
+
+  /* nav ul li a{
+    margin: 0px 5px;
+  } */
+}
